@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/workload
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+
+
+
+
+server:
+  port: 8083
