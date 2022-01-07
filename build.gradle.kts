@@ -16,7 +16,8 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+	// https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf
+	implementation("org.thymeleaf:thymeleaf:3.0.14.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
