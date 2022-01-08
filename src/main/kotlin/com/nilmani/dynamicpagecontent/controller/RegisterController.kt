@@ -22,15 +22,15 @@ class RegisterController {
     }
     @GetMapping("/register")
     fun register():String{
-        return "redirect:/Register"
+        return "Register"
     }
     @GetMapping("/login")
     fun getLogin():String{
-        return "Login"
+        return "/templates/Login"
     }
     @PostMapping("/saveConsumer")
     fun registerConsumer(@ModelAttribute consumer:Consumer, model: Model):String{
         model.addAttribute("consumer",consumer)
-        return "SuccessPage"
+        return "redirect:SuccessPage"
     }
 }
